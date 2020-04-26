@@ -1,0 +1,46 @@
+header .navbar {
+    border-bottom: 3px solid var(--vermelho1);
+}
+
+header .navbar #logo_name{
+    width: 200px !important;
+}
+
+header .navbar #carrinho svg{
+    height: 24px !important;
+}
+
+header #product_categories {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+header #product_categories div {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+header #product_categories div a {
+    text-decoration: none;
+}
+
+header .header_category_item svg{
+    padding: 5px;
+    max-width: 52px;
+    max-height: 52px;
+    transition: 0.25s;
+    border-radius: 50%;
+}
+
+header .header_category_item svg path[class$="-1"]{
+    fill: var(--azul1)
+}
+
+header .header_category_item:hover svg{
+    background: var(--azul1)
+}
+
+header .header_category_item:hover svg path[class$="-1"] {
+    fill: var(--gray);
+}

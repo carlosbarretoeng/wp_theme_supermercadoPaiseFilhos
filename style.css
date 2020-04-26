@@ -1,0 +1,33 @@
+@import "css/header.css";
+@import "css/carousel.css";
+@import "css/menus.css";
+@import "css/footer.css";
+
+/*
+Theme Name: SupermercadoPais_e_Filhos
+Text Domain: SupermercadoPaisEFilhos
+Version: 0.0.1
+Description: Template para o Supermercado Pais & Filhos
+Tags: e-commerce
+Author: Carlos Barreto
+Author URI: https://loky.dev/
+*/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --azul1: #00b7e2;
+    --vermelho1: #e83a3d;
+
+    --primary: #00b7e2;
+}
+
+main .page-title{
+    display: none;
+}
+
+.woocommerce-info{
+    margin-bottom: 0;
+}
