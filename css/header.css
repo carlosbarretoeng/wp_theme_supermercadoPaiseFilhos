@@ -47,7 +47,16 @@ header .header_category_item:hover svg path[class$="-1"] {
 
 header #mobile_categories svg{
     padding: 5px;
-    width: 52px;
-    height: 52px;
+    width: 36px;
+    height: 36px;
     transition: 0.25s;
+}
+
+header #mobile_categories hr{
+    border: 1px solid var(--vermelho1);
+    width: 100%;
+}
+
+header #mobile_categories #minhaConta *{
+    color: var(--gray) !important;
 }

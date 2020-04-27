@@ -28,7 +28,7 @@ function get_navbar_mobile()
 {
     ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".multi-collapse"
+        <button class="btn btn-light" type="button" data-toggle="collapse" data-target=".multi-collapse"
                 aria-controls="navbarMobileCat conteudo" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
         </button>
@@ -37,10 +37,9 @@ function get_navbar_mobile()
             <?php get_template_part('images/inline', 'logo_name.svg'); ?>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".multi-collapse"
-                aria-controls="navbarMobileCat conteudo" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-        </button>
+        <a id="carrinho" class="btn btn-light" href="<?php echo wc_get_cart_url(); ?>">
+            <?php get_template_part('images/inline', 'carrinho.svg'); ?>
+        </a>
 
         <div class="collapse multi-collapse navbar-collapse overflow-auto" id="navbarMobileCat" style="max-height: calc(100vh - 130px) !important;">
             <?php do_action('pais_e_filhos_header_categorias'); ?>
@@ -97,17 +96,32 @@ function get_categorias_desktop($product_categories){
 function get_categorias_mobile($product_categories){
     ?>
     <ul id="mobile_categories" class="list-unstyled navbar-nav mt-2">
+        <li id="minhaConta" class="media">
+            <a class="d-flex justify-content-center align-items-center header_category_item" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
+                <div class="align-self-start float-left">
+                    <i class="fa fa-lg fa-user  text-black"></i>
+                </div>
+                <div class="media-body float-left">
+                    <span class="mt-0 mb-1 text-black">Minha conta</span>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+        <hr/>
     <?php
     foreach ($product_categories as $product_category) {
         if ($product_category->slug == 'sem-categoria') continue;
     ?>
         <li class="media">
-            <div class="align-self-start">
-                <?php get_template_part('images/inline', $product_category->slug . '.svg'); ?>
-            </div>
-            <div class="media-body">
-                <span class="mt-0 mb-1"><?php echo $product_category->name ?></span>
-            </div>
+            <a class="d-flex justify-content-center align-items-center header_category_item" href="<?php echo get_category_link($product_category->term_id); ?>">
+                <div class="align-self-start float-left">
+                    <?php get_template_part('images/inline', $product_category->slug . '.svg'); ?>
+                </div>
+                <div class="media-body float-left">
+                    <span class="mt-0 mb-1"><?php echo $product_category->name ?></span>
+                </div>
+                <div class="clearfix"></div>
+            </a>
         </li>
     <?php
     }
