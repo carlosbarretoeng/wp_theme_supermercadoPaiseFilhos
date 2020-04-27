@@ -1,4 +1,4 @@
-header .navbar {
+header .navbar:last-of-type {
     border-bottom: 3px solid var(--vermelho1);
 }
 
@@ -43,4 +43,11 @@ header .header_category_item:hover svg{
 
 header .header_category_item:hover svg path[class$="-1"] {
     fill: var(--gray);
+}
+
+header #mobile_categories svg{
+    padding: 5px;
+    width: 52px;
+    height: 52px;
+    transition: 0.25s;
 }

@@ -1,38 +1,20 @@
 <?php
 function get_carousel() {
-    $hasImages = false;
 ?>
-<div class="<?php echo wp_is_mobile() ? "carousel_mobile" : "carousel_desktop" ?> slide" data-ride="carousel">
-<?php
-    if($hasImages){
-?>
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <!--<div class="carousel-item active">
-            <img class="d-block w-100" src="https://picsum.photos/seed/picsum/728/182" alt="First slide">
+<div class="<?php echo wp_is_mobile() ? "carousel_mobile" : "carousel_desktop" ?>">
+    <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://picsum.photos/seed/picsum/728/182" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://placedog.net/728/182" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://via.placeholder.com/728x182.png?text=Teste" alt="Third slide">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://picsum.photos/seed/picsum/728/182" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://picsum.photos/seed/picsum/728/182" alt="Third slide">
-        </div>-->
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-<?php
-    }
-?>
 </div>
 <?php
 }

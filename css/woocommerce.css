@@ -1,0 +1,8 @@
+.product_title{
+    font-size: 1.75rem;
+}
+
+.woocommerce .woocommerce-input-wrapper {
+    width: 100%;
+    display: block;
+}

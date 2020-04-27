@@ -19,9 +19,9 @@
 
 <?php wp_body_open(); ?>
 
-<div class="container bg-white px-2">
+<div class="container bg-white px-0">
     <header class="container fixed-top p-0">
         <?php do_action('pais_e_filhos_header_navbar'); ?>
-        <?php do_action('pais_e_filhos_header_categorias'); ?>
     </header>
+    <div id="conteudo" class="collapse show multi-collapse">
     <?php do_action('pais_e_filhos_carousel'); ?>
