@@ -132,22 +132,15 @@ function get_categorias_mobile($product_categories){
 
 function get_categorias()
 {
-    $taxonomy = 'product_cat';
-    $orderby = 'name';
-    $show_count = 0;
-    $pad_counts = 0;
-    $hierarchical = 1;
-    $title = '';
-    $empty = 0;
-
     $args = array(
-        'taxonomy' => $taxonomy,
-        'orderby' => $orderby,
-        'show_count' => $show_count,
-        'pad_counts' => $pad_counts,
-        'hierarchical' => $hierarchical,
-        'title_li' => $title,
-        'hide_empty' => $empty
+        'taxonomy' => 'product_cat',
+        'orderby' => 'name',
+        'show_count' => 0,
+        'pad_counts' => 0,
+        'hierarchical' => 1,
+        'title_li' => '',
+        'hide_empty' => 0,
+        'parent' => 0
     );
     $product_categories = get_categories($args);
     if(wp_is_mobile()){

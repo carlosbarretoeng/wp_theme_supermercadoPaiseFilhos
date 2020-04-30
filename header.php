@@ -23,5 +23,5 @@
     <header class="container fixed-top p-0">
         <?php do_action('pais_e_filhos_header_navbar'); ?>
     </header>
-    <div id="conteudo" class="collapse show multi-collapse px-2">
+    <div id="conteudo" class="collapse show multi-collapse">
     <?php do_action('pais_e_filhos_carousel'); ?>

@@ -2,7 +2,7 @@
 
             <div id="footer" class="container bg-dark text-white">
                 <div class="row">
-                    <div class="col-sm-16 col-md-4">
+                    <div class="col-sm-16 col-md-6">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
                                 <h4 class="card-title">Institucional</h4>
@@ -18,21 +18,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-16 col-md-8">
+                    <div class="col-sm-16 col-md-4">
 
                     </div>
-                    <div class="col-sm-16 col-md-4">
+                    <div class="col-sm-16 col-md-6">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
                                 <h4 class="card-title">Atendimento</h4>
                                 <ul class="list-group">
                                     <li class="list-group-item px-0 py-1 border-0 bg-transparent">
-                                        <i class="float-left mr-1 fa fa-3x fa-phone-square-alt"></i>
-                                        <h5 class="float-left"><?php do_action('pais_e_filhos_theme_print_option', 'telephone') ?></h5>
+                                        <i class="float-left mr-1 fa fa-2x fa-phone-square-alt"></i>
+                                        <h6 class="float-left"><?php do_action('pais_e_filhos_theme_print_option', 'telephone') ?></h6>
                                     </li>
                                     <li class="list-group-item px-0 py-1 border-0 bg-transparent">
-                                        <i class="float-left mr-1 fab fa-3x fa-whatsapp"></i>
-                                        <h5 class="float-left"><?php do_action('pais_e_filhos_theme_print_option','whatsapp') ?></h5>
+                                        <i class="float-left mr-1 fab fa-2x fa-whatsapp"></i>
+                                        <h6 class="float-left"><?php do_action('pais_e_filhos_theme_print_option','whatsapp') ?></h6>
+                                    </li>
+                                    <li class="list-group-item px-0 py-1 border-0 bg-transparent">
+                                        <i class="float-left mr-1 fas fa-2x fa-at"></i>
+                                        <h6 class="float-left"><?php do_action('pais_e_filhos_theme_print_option','email') ?></h6>
                                     </li>
                                 </ul>
                             </div>

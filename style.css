@@ -20,10 +20,11 @@ Author URI: https://loky.dev/
 }
 
 :root{
-    --azul1: #00b7e2;
-    --vermelho1: #e83a3d;
+    --azul1: #009cdd;
+    --azul2: #3d4199;
+    --vermelho1: #ee3737;
 
-    --primary: #00b7e2;
+    --primary: #009cdd;
 }
 
 main .page-title{
