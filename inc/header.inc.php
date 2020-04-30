@@ -71,7 +71,7 @@ function get_navbar()
 
 function get_categorias_desktop($product_categories){
 ?>
-    <div class="d-none d-lg-block bg-white p-0 py-2 container" style="height: 110px">
+    <div class="d-none d-lg-block bg-white p-0 py-2 px-4 container" style="height: 110px">
         <div id="product_categories" class="row">
             <?php
             foreach ($product_categories as $product_category) {
