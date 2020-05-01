@@ -3,11 +3,7 @@ header .navbar:last-of-type {
 }
 
 header .navbar #logo_name{
-    width: 200px !important;
-}
-
-header .navbar #carrinho svg{
-    height: 24px !important;
+    width: 180px !important;
 }
 
 header #product_categories {
@@ -59,4 +55,31 @@ header #mobile_categories hr{
 
 header #mobile_categories #minhaConta *{
     color: var(--gray) !important;
+}
+
+header #carrinho{
+    line-height: 38px;
+}
+
+header svg#carrinho{
+    width: 36px;
+    height: 36px !important;
+    float: left;
+}
+
+header svg#carrinho ~ div{
+    padding-left: 0.25rem;
+    float: left;
+    line-height: 38px;
+}
+
+header input[name=s]{
+    width: calc(100% - 45px)
+}
+
+@media screen and (max-width: 769px) {
+    header svg#carrinho{
+        width: 24px;
+        height: 24px !important;
+    }
 }

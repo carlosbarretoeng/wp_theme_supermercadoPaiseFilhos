@@ -6,3 +6,7 @@
     width: 100%;
     display: block;
 }
+
+.woocommerce_checkout_place_order{
+    background-color: var(--azul1);
+}

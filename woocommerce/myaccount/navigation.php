@@ -23,12 +23,19 @@ do_action( 'woocommerce_before_account_navigation' );
 ?>
 
 <nav class="woocommerce-MyAccount-navigation">
-	<ul>
-		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
-			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
-				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
-			</li>
-		<?php endforeach; ?>
+    <ul class="list-group">
+        <li class="list-group-item <?php echo wc_get_account_menu_item_classes( "edit-account" ); ?>">
+            <a href="<?php echo esc_url( wc_get_account_endpoint_url( "edit-account" ) ); ?>">Detalhes da Conta</a>
+        </li>
+        <li class="list-group-item <?php echo wc_get_account_menu_item_classes( "orders" ); ?>">
+            <a href="<?php echo esc_url( wc_get_account_endpoint_url( "orders" ) ); ?>">Pedidos</a>
+        </li>
+        <li class="list-group-item <?php echo wc_get_account_menu_item_classes( "edit-address" ); ?>">
+            <a href="<?php echo esc_url( wc_get_account_endpoint_url( "edit-address" ) ); ?>">Endereços</a>
+        </li>
+        <li class="list-group-item <?php echo wc_get_account_menu_item_classes( "customer-logout" ); ?>">
+            <a href="<?php echo esc_url( wc_get_account_endpoint_url( "customer-logout" ) ); ?>">Sair</a>
+        </li>
 	</ul>
 </nav>
 

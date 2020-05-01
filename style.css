@@ -27,6 +27,11 @@ Author URI: https://loky.dev/
     --primary: #009cdd;
 }
 
+main {
+    min-height: calc(100vh - 400px);
+    padding: 1rem;
+}
+
 main .page-title{
     display: none;
 }

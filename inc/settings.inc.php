@@ -16,11 +16,7 @@ function pais_e_filhos_admin()
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
 
-    wp_enqueue_style('pais_e_filhos_theme_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css');
-    wp_enqueue_style('pais_e_filhos_theme_custom_css', get_stylesheet_uri());
-
-    // wp_enqueue_script('pais_e_filhos_theme_jquery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), null, true);
-    // wp_enqueue_script('pais_e_filhos_theme_popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), null, true);
+    /**/
     wp_enqueue_script('pais_e_filhos_theme_bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), null, true);
     wp_enqueue_script('pais_e_filhos_theme_fontawesome_js', get_template_directory_uri() . '/js/fontawesome.min.js', array(), null, true);
     wp_enqueue_script('pais_e_filhos_theme_input_mask', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js', array(), null, true);
@@ -74,6 +70,8 @@ function pais_e_filhos_custom_options()
 
 function pais_e_filhos_theme_admin_page()
 {
+    wp_enqueue_style('pais_e_filhos_theme_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_enqueue_style('pais_e_filhos_theme_custom_css', get_stylesheet_uri());
     require(get_template_directory() . "/admin/info.php");
 }
 
